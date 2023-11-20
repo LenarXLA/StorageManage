@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageManage.Module", "StorageManage.Module\StorageManage.Module.csproj", "{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageManage.Blazor.Server", "StorageManage.Blazor.Server\StorageManage.Blazor.Server.csproj", "{01A1F58B-6ECB-4A63-894D-202A08A9357A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6F1F20-A7E6-4EAB-A8E0-C3DC01C7F82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A1F58B-6ECB-4A63-894D-202A08A9357A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A1F58B-6ECB-4A63-894D-202A08A9357A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A1F58B-6ECB-4A63-894D-202A08A9357A}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{01A1F58B-6ECB-4A63-894D-202A08A9357A}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{01A1F58B-6ECB-4A63-894D-202A08A9357A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A1F58B-6ECB-4A63-894D-202A08A9357A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D9731AB-0897-46F0-B356-E0AB5C724410}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="StorageManage" PreferredLanguage="(User language)">
+  <NavigationItems NavigationStyle="TreeList">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="Cargo_ListView" Removed="True" />
+          <Item Id="Picket_ListView" Removed="True" />
+          <Item Id="Square_ListView" Removed="True" />
+          <Item Id="Warehouse_ListView">
+            <Items>
+              <Item Id="Square_ListView" ViewId="Square_ListView" ObjectKey="" IsNewNode="True">
+                <Items IsNewNode="True">
+                  <Item Id="Picket_ListView" ViewId="Picket_ListView" ObjectKey="" IsNewNode="True">
+                    <Items IsNewNode="True">
+                      <Item Id="Cargo_ListView" ViewId="Cargo_ListView" ObjectKey="" IsNewNode="True" />
+                    </Items>
+                  </Item>
+                </Items>
+              </Item>
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="23.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Cargo_LookupListView">
+      <Columns>
+        <ColumnInfo Id="CargoWeight" Width="120" SortIndex="0" SortOrder="Descending" />
+        <ColumnInfo Id="CargoDate" Width="156" />
+        <ColumnInfo Id="Square" Width="217" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Square_DetailView">
+      <Items>
+        <PropertyEditor Id="Item.CargoWeight" PropertyName="Item.CargoWeight" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="14.356435643564357">
+            <LayoutGroup Id="Square" RelativeSize="71.55172413793103">
+              <LayoutItem Id="SquareName" RelativeSize="38.55421686746988" />
+              <LayoutItem Id="SquareDate" RelativeSize="28.91566265060241" />
+              <LayoutGroup Id="Auto19cb09f7-5791-4ec7-9bdf-a92aeaca4b87" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="32.53012048192771" IsNewNode="True">
+                <LayoutItem Id="Item" ViewItem="Item" Index="0" RelativeSize="49.93412384716733" IsNewNode="True" />
+                <LayoutItem Id="Item.CargoWeight" ViewItem="Item.CargoWeight" Index="1" RelativeSize="50.06587615283267" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="28.448275862068964" Index="1">
+              <LayoutItem Id="Oid" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Pickets_Group" Direction="Vertical" RelativeSize="85.64356435643565">
+            <LayoutItem Id="Pickets" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Square_ListView">
+      <Columns>
+        <ColumnInfo Id="SquareDate" Index="0" />
+        <ColumnInfo Id="Item" PropertyName="Item.CargoWeight" Index="1" />
+        <ColumnInfo Id="SquareName" Index="2" />
+      </Columns>
+    </ListView>
+    <ListView Id="Square_Pickets_ListView">
+      <Columns>
+        <ColumnInfo Id="Warehouse" Width="131" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

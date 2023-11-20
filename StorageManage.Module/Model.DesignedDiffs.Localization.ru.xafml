@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Основное">
+        <Items>
+          <Item Id="Warehouse_ListView" Caption="Склад">
+            <Items>
+              <Item Id="Square_ListView" Caption="Площадка">
+                <Items>
+                  <Item Id="Picket_ListView" Caption="Пикет">
+                    <Items>
+                      <Item Id="Cargo_ListView" Caption="Груз" />
+                    </Items>
+                  </Item>
+                </Items>
+              </Item>
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="Cargo_DetailView" Caption="Груз">
+      <Items>
+        <PropertyEditor Id="CargoDate" Caption="Дата" />
+        <PropertyEditor Id="CargoWeight" Caption="Вес" />
+        <PropertyEditor Id="Square" Caption="Площадка" />
+      </Items>
+    </DetailView>
+    <ListView Id="Cargo_ListView" Caption="Груз">
+      <Columns>
+        <ColumnInfo Id="CargoWeight" Caption="Вес груза" />
+        <ColumnInfo Id="CargoDate" Caption="Дата" />
+        <ColumnInfo Id="Square" Caption="Площадка" />
+      </Columns>
+    </ListView>
+    <ListView Id="Cargo_LookupListView" Caption="Груз">
+      <Columns>
+        <ColumnInfo Id="CargoWeight" Caption="Вес груза" />
+        <ColumnInfo Id="CargoDate" Caption="Дата" />
+        <ColumnInfo Id="Square" Caption="Площадка" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Picket_DetailView">
+      <Items>
+        <PropertyEditor Id="AuditTrail" Caption="Отслеживание изменений" />
+        <PropertyEditor Id="PicketName" Caption="Наименование" />
+        <PropertyEditor Id="Square" Caption="Площадка" />
+        <PropertyEditor Id="Warehouse" Caption="Склад" />
+      </Items>
+    </DetailView>
+    <ListView Id="Picket_ListView" Caption="Пикет">
+      <Columns>
+        <ColumnInfo Id="PicketName" Caption="Наименование" />
+        <ColumnInfo Id="Warehouse" Caption="Склад" />
+        <ColumnInfo Id="Square" Caption="Площадка" />
+      </Columns>
+    </ListView>
+    <ListView Id="Picket_LookupListView" Caption="Пикет">
+      <Columns>
+        <ColumnInfo Id="PicketName" Caption="Наименование" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Square_DetailView" Caption="Площадка">
+      <Items>
+        <PropertyEditor Id="Item" Caption="Груз" />
+        <PropertyEditor Id="Item.CargoWeight" Caption="Вес груза" />
+        <PropertyEditor Id="Pickets" Caption="Пикеты" />
+        <PropertyEditor Id="SquareDate" Caption="Дата" />
+        <PropertyEditor Id="SquareName" Caption="Наименование" />
+      </Items>
+    </DetailView>
+    <ListView Id="Square_ListView" Caption="Площадка">
+      <Columns>
+        <ColumnInfo Id="SquareDate" Caption="Дата" />
+        <ColumnInfo Id="Item" Caption="Вес груза" />
+        <ColumnInfo Id="SquareName" Caption="Наименование" />
+      </Columns>
+    </ListView>
+    <ListView Id="Square_LookupListView" Caption="Площадка">
+      <Columns>
+        <ColumnInfo Id="SquareName" Caption="Наименование" />
+      </Columns>
+    </ListView>
+    <ListView Id="Square_Pickets_ListView" Caption="Пикет">
+      <Columns>
+        <ColumnInfo Id="Square" Caption="Площадка" />
+        <ColumnInfo Id="PicketName" Caption="Наименование" />
+        <ColumnInfo Id="Warehouse" Caption="Склад" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Warehouse_DetailView" Caption="Склад">
+      <Items>
+        <PropertyEditor Id="AuditTrail" Caption="Отслеживание изменений" />
+        <PropertyEditor Id="Pickets" Caption="Пикеты" />
+        <PropertyEditor Id="WarehouseName" Caption="Наименование" />
+      </Items>
+    </DetailView>
+    <ListView Id="Warehouse_ListView" Caption="Склад">
+      <Columns>
+        <ColumnInfo Id="WarehouseName" Caption="Наименование" />
+      </Columns>
+    </ListView>
+    <ListView Id="Warehouse_LookupListView" Caption="Склад">
+      <Columns>
+        <ColumnInfo Id="WarehouseName" Caption="Наименование" />
+      </Columns>
+    </ListView>
+    <ListView Id="Warehouse_Pickets_ListView" Caption="Пикет">
+      <Columns>
+        <ColumnInfo Id="Warehouse" Caption="Склад" />
+        <ColumnInfo Id="PicketName" Caption="Наименование" />
+        <ColumnInfo Id="Square" Caption="Площадка" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
